@@ -1,67 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keshav Saini - DevOps/SRE Engineer</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
+            line-height: 1.6;
         }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        h1 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        h2 {
-            margin-top: 20px;
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-        }
-        h3 {
-            margin-top: 15px;
-            color: #34495e;
-        }
-        .section {
+        
+        .header {
+            text-align: center;
             margin-bottom: 20px;
         }
-        .company {
-            font-weight: bold;
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 15px 0;
         }
-        .date {
-            font-style: italic;
-            color: #7f8c8d;
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1rem;
         }
-        ul {
-            padding-left: 20px;
+        
+        .contact-item:hover {
+            color: #3498db;
         }
-        li {
-            margin-bottom: 5px;
+        
+        .contact-icon {
+            color: #3498db;
+            font-size: 1.2rem;
         }
+        
+        .section {
+            margin: 25px 0;
+        }
+        
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            margin: 10px 0;
         }
+        
         .skill {
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            border-radius: 5px;
+            background: #f0f2f5;
+            padding: 5px 15px;
+            border-radius: 15px;
             font-size: 0.9em;
         }
+        
+        .company {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .language-item {
+            margin-right: 20px;
+        }
+        
+        .language-proficiency {
+            font-weight: bold;
+        }
+        
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+
+        .cgpa {
+            background-color: #f0f2f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
     </style>
+    <!-- Adding Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="section">
+    <div class="header">
         <h1>KESHAV SAINI</h1>
-        <p>DevOps/SRE Engineer | Cloud Architect | Infrastructure Automation Specialist</p>
+        <p>DevOps/SRE Engineer | Cloud Engineer | Infrastructure Automation Specialist</p>
+        <div class="contact-info">
+            <a href="tel:+916005181134" class="contact-item">
+                <i class="fas fa-phone contact-icon"></i>
+                +91 600-518-1134
+            </a>
+            <a href="mailto:keshavmlsaini@gmail.com" class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                keshavmlsaini@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/keshavmlsaini/" class="contact-item" target="_blank">
+                <i class="fab fa-linkedin contact-icon"></i>
+                LinkedIn
+            </a>
+            <a href="https://github.com/keshavmlsaini" class="contact-item" target="_blank">
+                <i class="fab fa-github contact-icon"></i>
+                GitHub
+            </a>
+        </div>
+        <div class="contact-info">
+            <span class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                Jammu, Jammu and Kashmir
+            </span>
+        </div>
     </div>
 
     <div class="section">
@@ -119,7 +184,6 @@
 
     <div class="section">
         <h2>Notable Projects</h2>
-        
         <h3>Teem - Workplace Management Solution</h3>
         <ul>
             <li>Maintained an impressive 99.9% SLA for this business-critical application</li>
@@ -147,6 +211,19 @@
             <li>Leveraged various AWS services to ensure scalability and reliability</li>
             <li>Optimized deployment strategies for enhanced performance</li>
         </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>B.Tech. in Computer Science and Engineering</strong><br>
+        ABES INSTITUTE OF TECHNOLOGY, GHAZIABAD (U.P)<br>
+        <span class="cgpa">7.7 CGPA</span></p>
+    </div>
+
+    <div class="section">
+        <h2>Languages</h2>
+        <span class="language-item"><span class="language-proficiency">Hindi:</span> Native</span>
+        <span class="language-item"><span class="language-proficiency">English:</span> Proficient</span>
     </div>
 </body>
 </html>
